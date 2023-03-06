@@ -1,0 +1,188 @@
+.nav{
+  background: blueviolet;
+}
+
+.dropdown-content{
+  line-height: 35px;
+  display: none;
+  position: absolute;
+  background-color: blueviolet;
+  padding: 15px;
+  width: 150vh;
+  padding-left: 25px;
+  /* top: 53px; */
+}
+
+/* .dropdown{
+  position: relative;
+  display: inline-block;
+} */
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: rgb(231, 179, 231);
+}
+
+.search{
+  position: absolute;
+  top: 17px;
+  right: 50px;
+  /* padding: 6px 6px 6px 30px */
+}
+
+.acc{
+  margin-left: 335px;
+  color: blueviolet;
+  background: white;
+  border: 1px solid blueviolet;
+  border-radius: 20px;
+}
+
+.log{
+  margin-left: 5px;
+  color: blueviolet;
+  background: white;
+  border: 1px solid blueviolet;
+  border-radius: 20px;
+}
+
+.acc:hover{
+  color: white;
+  background: rgb(191, 78, 191);
+}
+
+.log:hover{
+  color: white;
+  background: rgb(191, 78, 191);
+}
+
+i{
+  position: absolute;
+  top: 11px;
+  right: 15px;
+}
+
+.search-icon{
+  color: black;
+}
+
+.search-icon:hover{
+  color: black;
+}
+
+.ind-code{
+  font-weight: bold;
+  position: relative;
+  top: 40px;
+  left: 5px;
+}
+
+input[type=tel]{
+  padding: 15px;
+  padding-left: 40px;
+  width: 375px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+input[type=submit]{
+  position: absolute;
+  top: 452px;
+  left: 365px;
+  color: white;
+  background: blueviolet;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 8px 6px 8px;
+}
+
+.left-header{
+  background-image: linear-gradient(to right, blueviolet, white);
+}
+
+.intro{
+  font-size: 80px;
+}
+
+.acc-promo{
+  color: white;
+  margin-top: 35px;
+  margin-right: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.brokerage-promo{
+  color: white;
+  margin-top: 35px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 300px;
+}
+
+.asset-classes{
+  padding: 150px;
+}
+
+.s-left{
+  padding: 100px 130px 130px 130px;
+}
+
+.s-right{
+  padding: 100px 100px 130px 130px;
+}
+
+.s-intro{
+  font-size: 45px;
+  font-weight:650;
+}
+
+.s-info{
+  font-size: 20px;
+}
+
+.pricing{
+  font-size: 75px;
+}
+
+.box-1{
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  margin-left: 45px;
+  padding: 25px;
+}
+
+.box-2{
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.box-3{
+  padding: 25px;
+}
+
+.social{
+  position: relative;
+  top: 65px;
+}
+
+.login{
+  text-decoration: none;
+  color: blueviolet; 
+  border: 1px solid blueviolet; 
+  border-radius: 20px;
+}
+
+.login:hover{
+  color: white;
+  background: blueviolet;
+}
