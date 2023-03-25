@@ -186,3 +186,7 @@ input[type=submit]{
   color: white;
   background: blueviolet;
 }
+
+.s-price{
+  display: none;    
+ } 

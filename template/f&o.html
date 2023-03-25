@@ -46,7 +46,18 @@
         </ul>
         <form class="form-inline search">
           <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-            <input type="text" class="form-control mr-2" placeholder="Search any stock">
+          <input id="searchbar" onkeyup="search_stock()" type="text" name="search" class="form-control mr-2" placeholder="Search any stock">
+
+
+          <ol style="list-style: none; padding: 0; margin: 0; line-height: 50px; background: rgb(207, 199, 199); border-radius: 8px; margin-top: 5px;" id="search-list">
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">AXIS BANK</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">ICICI BANK</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">TATA STEEL LIMITED</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">ADANI ENTERPRISES LIMITED</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">MAHINDRA & MAHINDRA</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">INDIAN OIL</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">RELIANCE INDUSTRIES LTD</li></a>
+          </ol>
         </form>
         <a href="./createAcc.html" class="p-2 acc">Create Account</a>
         <a href="./login.html" class="px-3 py-2 log">Sign In</a>
@@ -63,7 +74,7 @@
       <form class="form-group">
         <span class="ind-code">+91</span>
         <input type="tel" placeholder="Enter your number" class="form-control" id="phone">
-        <input type="submit" value="start Investing" style="border-radius: 100px; position: absolute; top: 505px; left: 393px;">
+        <input type="submit" value="start Investing" style="border-radius: 100px; position: absolute; top: 475px; left: 393px;">
         <div class="invalid-feedback">
           Please enter a valid phone number
         </div>
