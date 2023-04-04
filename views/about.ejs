@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Stocks | About</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm py-3 nav sticky-top">
+    <div class="container">
+      <a href="/" class="navbar-brand"><img src="../images/logo.png" alt=""></a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-5">
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="/login" class="nav-link drop-link text-light">Invest</a>
+              <div class="dropdown-content">
+                <a href="/login">Stocks</a>
+                <br>
+                <a href="/login">IPOs</a>
+                <br>
+                <a href="/login">Mutuals Funds</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="/commodity" class="nav-link text-light">Trade</a>
+              <div class="dropdown-content">
+                <a href="/commodity">Futures & Options</a>
+                <br>
+                <a href="/commodity">Commodities</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="/about" class="nav-link text-light">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/get-pricing-info" class="nav-link text-light">Pricing</a>
+          </li>
+        </ul>
+        <form class="form-inline search">
+          <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+          <input id="searchbar" onkeyup="search_stock()" type="text" name="search" class="form-control mr-2" placeholder="Search any stock">
+
+
+          <ol style="list-style: none; padding: 0; margin: 0; line-height: 50px; background: rgb(207, 199, 199); border-radius: 8px; margin-top: 5px;" id="search-list">
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">AXIS BANK</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">ICICI BANK</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">TATA STEEL LIMITED</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">ADANI ENTERPRISES LIMITED</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">MAHINDRA & MAHINDRA</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">INDIAN OIL</li></a>
+            <a href="#" style=" color: black;"><li class="s-price" style="display: none;">RELIANCE INDUSTRIES LTD</li></a>
+          </ol>        </form>
+        <a href="/create-your-account" class="p-2 acc">Create Account</a>
+        <a href="/login" class="px-3 py-2 log">Sign In</a>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="d-flex" style="margin-top: 150px; padding-left: 55px; padding-right: 55px;">
+    <div class="a-left" style="margin-right: 35px;">
+      <div class="card" style="background: orangered;">
+        <div class="card-body">
+          <h1 class="card-title" card>
+            <img src="../images/left-quote.svg" alt="">
+            Our mission is to bring prosperity to every Indian.
+          </h1>
+        </div>
+        <img src="../images/indians.png" alt="">
+      </div>
+    </div>
+    <div class="a-right">
+      <p style="font-weight: 700; font-size: larger;">There are trillions of rupees of wealth in India, lying in unproductive assets, losing value over time. We will help millions of Indians do better with their wealth.</p>
+      <p style="font-size:large;">We will help them participate confidently in the public markets and build generational wealth through the power of compounding.</p>
+
+       <p style="font-size:large;">We will help them invest by providing the right financial education to make the right investment decisions at the right time.</p>
+        
+       <p style="font-size:large;">We will do this through a seamless digital platform that will bring together the best of cutting-edge technology, intuitive design, ease and safety.</p>
+    </div>
+  </div>
+
+  <div class="devs" style="padding: 150px;">
+    <h6 style="color: orangered;" class="mb-3 text-center">OUR PEOPLE</h6>
+    <h2 style="font-weight: 600; font-size: 40x;" class="mb-5 text-center">Meet the Developers</h2>
+    <div class="dev-1 row">
+      <div class="col">
+        <h5 style="position: relative; top: 25px;">Hrishit Bhattacharya</h5>
+        <a href="https://www.linkedin.com/in/hrishit-bhattacharya-5296a5239/" target="_blank" class="social"><img src="../images/linkedIn.png" width="30px" height="30px"></a>
+        <a href="https://github.com/Hrishit-B" target="_blank" class="social"><img src="../images/github.png" width="30px" height="30px">
+          </a>
+      </div>
+      <div class="col">
+        <img src="../images/dev1.jpg" width="360px" height="350px" style="border-radius: 15px;">
+      </div>
+    </div>
+    <div class="dev-2 row mt-5">
+      <div class="col">
+        <img src="../images/dev2.jpeg" width="400px" height="300px" style="border-radius: 15px;">
+      </div>
+      <div class="col">
+        <h5 style="position: relative; top: 25px;">Aryaman Bajpai</h5>
+        <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADiEpVABDw5ibH_9ZgtNJNufP2nMRxqUeZM&keywords=aryaman%20ashish%20bajpai&origin=RICH_QUERY_SUGGESTION&position=0&searchId=abf437d6-cfb8-4d83-bdbe-a85d5a67b81a&sid=CG2" target="_blank" class="social"><img src="../images/linkedIn.png" width="30px" height="30px"></a>
+        <a href="#" target="_blank" class="social">
+          <img src="../images/github.png" width="30px" height="30px"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center" style="background: blueviolet; margin-top: 150px; height: 150px;">
+    <div style="padding-top: 70px;" >
+      <h6 class="text-white">Copyright &copy; 2023</h6>
+    </div>
+  </div>
+  <script src="../JS/app.js"></script>
+</body>
+</html>
