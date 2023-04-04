@@ -16,4 +16,8 @@ router.get('/buy-stocks', viewController.getStockInfo);
 
 router.get('/get-pricing-info', viewController.getPricingInfo);
 
+router.post('/create-your-account', viewController.newAccDetails);
+
+router.post('/login', viewController.userLogin);
+
 module.exports = router;

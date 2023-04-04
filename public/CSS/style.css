@@ -190,3 +190,20 @@ input[type=submit]{
 .s-price{
   display: none;    
  } 
+
+ .s-detail{
+  padding-right: 75px;
+  border-right: 1px solid blueviolet;
+ }
+
+ .s-info{
+  font-size:medium;
+ }
+
+ #info-head{
+  background: rgb(214, 209, 209);
+  position: relative;
+  left: 118%;
+  /* padding: 10px; */
+  width: 300px;
+ }
