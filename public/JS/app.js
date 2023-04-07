@@ -81,6 +81,6 @@ function search_stock() {
   }
 }
 
-// document.getElementById('searchbar').addEventListener('blur', function(){
-//   document.querySelector("#search-list").style.display = 'none';
-// });
+document.querySelector("#buy").addEventListener('click', function(){
+  prompt('Enter the number of stocks');
+});
