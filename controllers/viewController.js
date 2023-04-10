@@ -21,10 +21,21 @@ exports.getCommodityInfo = catchAsync(async(req, res, next) => {
         .render('comms');
 });
 
-exports.createAccount = catchAsync(async(req, res, next) => {
+exports.signup = catchAsync(async (req, res) => {
     res
         .status(200)
         .render('createAcc');
+})
+
+exports.createAccount = catchAsync(async(req, res, next) => {
+
+    const newUser = await User.create({phone: req.body.phone});
+
+    if(newUser){
+        res
+            .status(200)
+            .render('stocks');
+    }
 });
 
 exports.login = catchAsync(async(req, res, next) => {
@@ -60,18 +71,18 @@ exports.newAccDetails = catchAsync(async(req, res, next) => {
 });
 
 exports.userLogin = catchAsync(async (req, res, next) => {
-    const userNum = req.body.phone;
+    const userNum = req.query.phone;
 
     const user = await User.findOne({phone: userNum});
 
     if(user){
         res
             .status(200)
-            .render('pricing');
+            .render('stocks');
     }
-    else{
-        res
-            .status(200)
-            .render('login');
-    }
+    // else{
+    //     res
+    //         .status(200)
+    //         .render('login');
+    // }
 });

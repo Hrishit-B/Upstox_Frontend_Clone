@@ -8,7 +8,9 @@ router.get('/about', viewController.aboutPage);
 
 router.get('/commodity', viewController.getCommodityInfo);
 
-router.get('/create-your-account', viewController.createAccount);
+router.get('/create-your-account', viewController.signup);
+
+router.post('/create-your-account', viewController.createAccount);
 
 router.get('/login', viewController.login);
 
