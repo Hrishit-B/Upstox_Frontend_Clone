@@ -27,7 +27,7 @@ exports.signup = catchAsync(async (req, res) => {
         .render('createAcc');
 })
 
-exports.createAccount = catchAsync(async(req, res, next) => {
+exports.getStockInfo = catchAsync(async(req, res, next) => {
     const stocks = await Stock.find();
     console.log(stocks);
 
@@ -48,30 +48,10 @@ exports.login = catchAsync(async(req, res, next) => {
         .render('login');
 });
 
-exports.getStockInfo = catchAsync(async(req, res, next) => {
-    const stocks = await Stock.find();
-
-    res
-        .status(200)
-        .render('stocks', {
-            stocks
-        });
-});
-
 exports.getPricingInfo = catchAsync(async(req, res, next) => {
     res
         .status(200)
         .render('pricing');
-});
-
-exports.newAccDetails = catchAsync(async(req, res, next) => {
-    const num = req.body.phone;
-
-    await User.create({phoneNo: num});
-    
-    res
-        .status(200)
-        .render('stocks');
 });
 
 exports.userLogin = catchAsync(async (req, res, next) => {
@@ -79,11 +59,12 @@ exports.userLogin = catchAsync(async (req, res, next) => {
 
     const user = await User.findOne({phoneNo: userNum});
 
-    if(user){
-        res
-            .status(200)
-            .render('stocks');
-    }
+    res
+        .status(200)
+        .render('stocks');
+
+    // if(user){
+    // }
     // else{
     //     res
     //         .status(200)

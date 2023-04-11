@@ -1,5 +1,21 @@
 [
     {
+        "name": "ICICI BANK",
+        "price": 875,
+        "marketCap": 610996.4,
+        "openAmt": 882,
+        "volume": 26042745,
+        "avgTrading": 879.56
+    },
+    {
+        "name": "TATA STEEL LIMITED",
+        "price": 104.35,
+        "marketCap": 127531.7,
+        "openAmt": 104.85,
+        "volume": 21053782,
+        "avgTrading": 104.57
+    },
+    {
         "name":"ADANI ENTERPRISES LIMITED",
         "price":1754.05,
         "marketCap":199961.90,
