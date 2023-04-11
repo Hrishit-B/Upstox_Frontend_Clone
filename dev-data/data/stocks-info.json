@@ -1,0 +1,42 @@
+[
+    {
+        "name":"ADANI ENTERPRISES LIMITED",
+        "price":1754.05,
+        "marketCap":199961.90,
+        "openAmt":1705.00,
+        "volume":6012473.00,
+        "avgTrading":1750.41
+    },
+    {
+        "name":"MAHINDRA & MAHINDRA",
+        "price":1171.25,
+        "marketCap":140142.50,
+        "openAmt":1154.00,
+        "volume":2029418.00,
+        "avgTrading":1165.09
+    },
+    {
+        "name":"AXIS BANK",
+        "price":851.95,
+        "marketCap":262149.00,
+        "openAmt":861.80,
+        "volume":19677316.00,
+        "avgTrading":854.21
+    },
+    {
+        "name":"INDIAN OIL",
+        "price":77.70,
+        "marketCap":109722.00,
+        "openAmt":77.15,
+        "volume":5063531.00,
+        "avgTrading":77.43
+    },
+    {
+        "name":"RELIANCE INDUSTRIES LTD",
+        "price":2341.45,
+        "marketCap":1584128.00,
+        "openAmt":2318.15,
+        "volume":8507771.00,
+        "avgTrading":2341.08
+    }
+]
