@@ -1,5 +1,5 @@
 const catchAsync = require('../utils/catchAsync');
-const Stock = require('../models/stockModel');
+const Stocks1 = require('../models/stockModel');
 const User = require('../models/userModel');
 
 exports.getOverView = catchAsync(async(req, res, next) => {
@@ -21,25 +21,47 @@ exports.getCommodityInfo = catchAsync(async(req, res, next) => {
         .render('comms');
 });
 
-exports.signup = catchAsync(async (req, res) => {
+
+exports.getPricingInfo = catchAsync(async(req, res, next) => {
     res
         .status(200)
-        .render('createAcc');
-})
+        .render('pricing');
+});
 
-exports.getStockInfo = catchAsync(async(req, res, next) => {
-    const stocks = await Stock.find();
-    console.log(stocks);
+exports.getStocks2 = catchAsync(async(req, res, next) => {
+    const phoneNo = req.body.phone;
 
-    const newUser = await User.create({phone: req.body.phone});
+    const stockInfo = Stocks1;
 
-    if(newUser){
-        res
-            .status(200)
-            .render('stocks', {
-                stocks
-            });
-    }
+    res
+        .status(200)
+        .render('stocks', {
+            phoneNo,
+            Sname : 'ICICI BANK',
+            Sprice: 875,
+            Scap: 610996.4,
+            Sopen: 882,
+            Svol: 26042745,
+            Savg: 879.56
+        });
+    
+});
+
+exports.getStocks = catchAsync(async(req, res, next) => {
+    const phoneNo = req.query.phone;
+
+    res
+        .status(200)
+        .render('stocks', {
+            phoneNo,
+            Sname : 'ICICI BANK',
+            Sprice: 875,
+            Scap: 610996.4,
+            Sopen: 882,
+            Svol: 26042745,
+            Savg: 879.56
+        });
+    
 });
 
 exports.login = catchAsync(async(req, res, next) => {
@@ -48,26 +70,8 @@ exports.login = catchAsync(async(req, res, next) => {
         .render('login');
 });
 
-exports.getPricingInfo = catchAsync(async(req, res, next) => {
+exports.signup = catchAsync(async(req, res, next) => {
     res
         .status(200)
-        .render('pricing');
-});
-
-exports.userLogin = catchAsync(async (req, res, next) => {
-    const userNum = req.query.phone;
-
-    const user = await User.findOne({phoneNo: userNum});
-
-    res
-        .status(200)
-        .render('stocks');
-
-    // if(user){
-    // }
-    // else{
-    //     res
-    //         .status(200)
-    //         .render('login');
-    // }
+        .render('createAcc');
 });

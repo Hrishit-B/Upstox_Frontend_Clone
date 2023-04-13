@@ -8,14 +8,13 @@ router.get('/about', viewController.aboutPage);
 
 router.get('/commodity', viewController.getCommodityInfo);
 
-router.get('/signup', viewController.signup);
-
-router.post('/create-your-account', viewController.getStockInfo);
-
 router.get('/get-pricing-info', viewController.getPricingInfo);
+
+router
+    .get('/stocks', viewController.getStocks)
+    .post('/stocks', viewController.getStocks2);
 
 router.get('/login', viewController.login);
 
-router.post('/login', viewController.userLogin);
-
+router.get('/signup', viewController.signup);
 module.exports = router;
