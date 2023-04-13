@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-    phoneNo: Number
+    phoneNo: Number,
+    Sname: String,
+    Sprice: Number
 })
 
 const User = mongoose.model('User', userSchema);

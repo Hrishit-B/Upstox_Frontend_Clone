@@ -1,6 +1,7 @@
 document.querySelector("#buy").addEventListener('click', function(){
     const buy = prompt('Enter the number of stocks to buy');
     document.querySelector("#stockNum").innerHTML = 882*buy;
+    document.querySelector("#name_of_stock").innerHTML = 'ICICI BANK';
 });
 
 document.querySelector("#sell").addEventListener('click', function(){

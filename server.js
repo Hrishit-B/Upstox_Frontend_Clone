@@ -1,15 +1,10 @@
 const app = require('./app');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
-dotenv.config({path: './config.env'});
 
-const DB = process.env.DATABASE.replace('<password>', process.env.DATABASE_PASSWORD);
+// const DB = 'mongodb://127.0.0.1:27017/WebTechDA2';
 
 // mongoose
-//     .connect(DB)
-//     .then(() => {
-//         console.log('DB successfully connected');
-//     });
+//     .connect(DB);
 
 const port = process.env.PORT || 5000;
 

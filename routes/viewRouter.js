@@ -17,4 +17,7 @@ router
 router.get('/login', viewController.login);
 
 router.get('/signup', viewController.signup);
+
+router.get('/buy-stocks', viewController.finalIndex);
+
 module.exports = router;

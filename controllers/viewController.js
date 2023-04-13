@@ -1,5 +1,5 @@
 const catchAsync = require('../utils/catchAsync');
-const Stocks1 = require('../models/stockModel');
+const Stock = require('../models/stockModel');
 const User = require('../models/userModel');
 
 exports.getOverView = catchAsync(async(req, res, next) => {
@@ -30,8 +30,6 @@ exports.getPricingInfo = catchAsync(async(req, res, next) => {
 
 exports.getStocks2 = catchAsync(async(req, res, next) => {
     const phoneNo = req.body.phone;
-
-    const stockInfo = Stocks1;
 
     res
         .status(200)
@@ -70,8 +68,14 @@ exports.login = catchAsync(async(req, res, next) => {
         .render('login');
 });
 
-exports.signup = catchAsync(async(req, res, next) => {
+exports.signup = catchAsync(async(req, res, next) => {    
     res
         .status(200)
         .render('createAcc');
+});
+
+exports.finalIndex = catchAsync(async(req, res, next) => {
+    res
+        .status(200)
+        .render('newIndex');
 });
