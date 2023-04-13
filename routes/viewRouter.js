@@ -10,11 +10,11 @@ router.get('/commodity', viewController.getCommodityInfo);
 
 router.get('/signup', viewController.signup);
 
-router.get('/login', viewController.login);
-
 router.post('/create-your-account', viewController.getStockInfo);
 
 router.get('/get-pricing-info', viewController.getPricingInfo);
+
+router.get('/login', viewController.login);
 
 router.post('/login', viewController.userLogin);
 

@@ -5,11 +5,11 @@ dotenv.config({path: './config.env'});
 
 const DB = process.env.DATABASE.replace('<password>', process.env.DATABASE_PASSWORD);
 
-mongoose
-    .connect(DB)
-    .then(() => {
-        console.log('DB successfully connected');
-    });
+// mongoose
+//     .connect(DB)
+//     .then(() => {
+//         console.log('DB successfully connected');
+//     });
 
 const port = process.env.PORT || 5000;
 
