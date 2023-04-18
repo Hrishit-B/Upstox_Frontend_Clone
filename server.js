@@ -1,10 +1,13 @@
 const app = require('./app');
 const mongoose = require('mongoose');
 
-// const DB = 'mongodb://127.0.0.1:27017/WebTechDA2';
+const DB = 'mongodb+srv://hrishitb0506:bHyty9Xdf7uvN3fj@cluster0.gqxxnd5.mongodb.net/test';
 
-// mongoose
-//     .connect(DB);
+mongoose
+    .connect(DB)
+    .then(()=> {
+        console.log('DB successfully connected');
+    });
 
 const port = process.env.PORT || 5000;
 
